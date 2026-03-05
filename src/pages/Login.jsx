@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-
+import './Login.css'
 
 function Login() {
   const[login, setLogin] = useState("")
@@ -29,23 +29,25 @@ function Login() {
 
   return (
     <>
-       <h1>Login</h1>
+       <h1 id="h1-login">Login</h1>
 
        
         <form onSubmit={validarLogin}>
           <input
+            id="input1"
             type="text" 
             placeholder="Login"
             value={login}
             onChange={(e) => setLogin(e.target.value)}
           /> <br /> <br />
           <input
+            id="input2"
             type="password" 
             placeholder="Senha"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
           /> <br /> <br />
-          <button type="submit">Entrar</button>
+          <button id="btnEntrar" type="submit">Entrar</button>
       </form>
       {erro && <p style={{color: "red"}}>{erro}</p>}
       <Link to={"/cadastro"}>Cadastro</Link>

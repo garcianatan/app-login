@@ -9,26 +9,6 @@
       "id": "2",
       "login": "user",
       "senha": "4321"
-    },
-    {
-      "id": "5497",
-      "login": "",
-      "senha": ""
-    },
-    {
-      "id": "7763",
-      "login": "",
-      "senha": ""
-    },
-    {
-      "id": "a5f3",
-      "login": "",
-      "senha": ""
-    },
-    {
-      "id": "fc63",
-      "login": "",
-      "senha": ""
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
